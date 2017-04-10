@@ -17,12 +17,25 @@ namespace OOP_Week3
         private int numOfSeats;
         private string VIN;
 
-        //properties
+        //Add a property
         public string Model
         {
             get { return this.model; }
-            set { model = value; }
+            set
+            {
+                if (value.ToLower() == "rolls-royce")
+                {
+                    model = "Aston Martin";
+                }
+
+                else
+                {
+                    model = value;
+                }
+                
+            }
         }
+
 
         //create a constructor; constructors are always public
         public Car(string model, string make, string color, string year, int numOfDoors, int numOfSeats, string VIN)
