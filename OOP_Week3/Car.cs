@@ -80,6 +80,7 @@ namespace OOP_Week3
             Console.WriteLine("It has " + numOfDoors + " doors and " + numOfSeats+" seats.");
             Console.WriteLine("The VIN # is " + VIN+".");
             Console.WriteLine("The vehicle has " + GetMileage() + " miles.");
+            Console.WriteLine();
 
         }
 
