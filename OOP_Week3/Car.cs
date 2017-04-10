@@ -36,6 +36,13 @@ namespace OOP_Week3
             }
         }
 
+        
+
+        public string Make
+        {
+            get { return this.make; }
+            set { make = value; }
+        }
 
         //create a constructor; constructors are always public
         public Car(string model, string make, string color, string year, int numOfDoors, int numOfSeats, string VIN)
