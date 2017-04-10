@@ -23,9 +23,9 @@ namespace OOP_Week3
             get { return this.model; }
             set
             {
-                if (value.ToLower() == "rolls-royce")
+                if (value.ToLower() == "phantom")
                 {
-                    model = "Aston Martin";
+                    model = "Venom";
                 }
 
                 else
@@ -41,8 +41,15 @@ namespace OOP_Week3
         public string Make
         {
             get { return this.make; }
-            set { make = value; }
+            
         }
+
+        public string CarName
+        {
+            get { return this.make + " " + this.model; }
+        }
+
+
 
         //create a constructor; constructors are always public
         public Car(string model, string make, string color, string year, int numOfDoors, int numOfSeats, string VIN)
@@ -57,7 +64,7 @@ namespace OOP_Week3
 
         }
 
-
+        
 
 
     }
