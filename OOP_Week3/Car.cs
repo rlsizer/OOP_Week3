@@ -74,7 +74,22 @@ namespace OOP_Week3
 
         }
 
+        public void TrashCompactor(int countDown)
+        {
+            for (int i = countDown; i >= 0; i--)
+            {
+                Console.WriteLine("Trash compactor starting in: " + i);
+            }
 
+            color = "crunched";
+            make = "smashed.. :(";
+            model = "cubed";
+            numOfDoors = -2;
+            numOfSeats = 0;
+            VIN = "Doesn't matter anymore.";
+
+            Console.WriteLine("Thank you for recycling your car!");
+        }
 
     }
 }
