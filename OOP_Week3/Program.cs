@@ -16,7 +16,7 @@ namespace OOP_Week3
             //Console.WriteLine("My car is an " +car1.color+" "+ car1.year + " " + car1.make + " " + car1.model+".");
             //car1.Model = "Phantom";
 
-            Console.WriteLine(car1.CarName);
+            car1.PrintCarInfo();
 
         }
     }

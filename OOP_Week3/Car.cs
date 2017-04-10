@@ -8,7 +8,7 @@ namespace OOP_Week3
 {
     class Car
     {
-
+        //fields
         private string model;
         private string make;
         private string color;
@@ -17,7 +17,7 @@ namespace OOP_Week3
         private int numOfSeats;
         private string VIN;
 
-        //Add a property
+        //properties
         public string Model
         {
             get { return this.model; }
@@ -50,7 +50,7 @@ namespace OOP_Week3
         }
 
 
-
+        //constructors
         //create a constructor; constructors are always public
         public Car(string model, string make, string color, string year, int numOfDoors, int numOfSeats, string VIN)
         {
@@ -64,7 +64,16 @@ namespace OOP_Week3
 
         }
 
-        
+        //methods
+
+        public void PrintCarInfo()
+        {
+            Console.WriteLine("This car is a " + CarName+ " that is "+color+".");
+            Console.WriteLine("It has " + numOfDoors + " doors and " + numOfSeats+" seats.");
+            Console.WriteLine("The VIN # is " + VIN+".");
+
+        }
+
 
 
     }
