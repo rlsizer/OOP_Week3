@@ -16,6 +16,7 @@ namespace OOP_Week3
         private int numOfDoors;
         private int numOfSeats;
         private string VIN;
+        private int odometer;
 
         //properties
         public string Model
@@ -61,16 +62,24 @@ namespace OOP_Week3
             this.numOfDoors = numOfDoors;
             this.numOfSeats = numOfSeats;
             this.VIN = VIN;
-
+            this. odometer = 0;
         }
 
         //methods
+
+        private int GetMileage()
+        {
+            odometer = odometer + 500;
+            return odometer;
+            
+        }
 
         public void PrintCarInfo()
         {
             Console.WriteLine("This car is a " + CarName+ " that is "+color+".");
             Console.WriteLine("It has " + numOfDoors + " doors and " + numOfSeats+" seats.");
             Console.WriteLine("The VIN # is " + VIN+".");
+            Console.WriteLine("The vehicle has " + GetMileage() + " miles.");
 
         }
 
@@ -79,6 +88,7 @@ namespace OOP_Week3
             for (int i = countDown; i >= 0; i--)
             {
                 Console.WriteLine("Trash compactor starting in: " + i);
+                
             }
 
             color = "crunched";

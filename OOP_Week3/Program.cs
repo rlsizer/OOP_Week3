@@ -17,6 +17,10 @@ namespace OOP_Week3
             //car1.Model = "Phantom";
 
             car1.PrintCarInfo();
+            Console.WriteLine();
+            car1.TrashCompactor(10);
+            car1.PrintCarInfo();
+
 
         }
     }
